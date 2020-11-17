@@ -9,12 +9,13 @@ span {
 
 .holder {
     color: #808080;
+    margin-right: 2em;
+}
+
+.holder:last-child {
+    margin-right: 0;
 }
 
 .value {
     color: #fff;
-}
-
-#follower-count-holder {
-    margin-left: 2em;
 }
