@@ -1,6 +1,6 @@
 (function() {
     // Twitch API Client ID and dialogikTV channel ID
-    const clientId = 'q9tlaburg1o21xbsm7upiacg4wgv2a';
+    const clientId = 'mn01zj33eftqrsn760lac2l7nwnrls';
     const channelId = '265345534';
 
     // Twitch.js
