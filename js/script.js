@@ -34,7 +34,7 @@
             fetchApi(channelId, api, followerCount, latestFollower, subCount, latestSub);
             setInterval(function() {
                 fetchApi(channelId, api, followerCount, latestFollower, subCount, latestSub);
-            }, 6000);
+            }, 60000); // 60 seconds
         }
     }
 })();
