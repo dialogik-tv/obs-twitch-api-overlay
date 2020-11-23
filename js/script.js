@@ -45,9 +45,9 @@ function fetchApi(channelId, api, followerCount, latestFollower, subCount, lates
         followerCount.innerText  = response.total;
         latestFollower.innerText = response.data[0].fromName;
         
-        api.get(`subscriptions?broadcaster_id=${channelId}`).then(response => {
-            subCount.innerText  = response.data.length - 1;
-            latestSub.innerText = response.data[0].userName;
+        api.get(`channels/${channelId}/subscriptions?direction=desc&limit=1`, { version: 'kraken' }).then(response => {
+            subCount.innerText  = response.total;
+            latestSub.innerText = response.subscriptions[0].user.displayName;
         });
     });
 }
