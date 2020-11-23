@@ -1,7 +1,7 @@
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   
 // Twitch API Client ID and dialogikTV channel ID
-const username = window.username || ''
+const username = window.username || 'dialogikTV'
 const subFolder = window.subFolder ?? 'obs-twitch-api-overlay/'
 const clientId = window.clientId || 'mn01zj33eftqrsn760lac2l7nwnrls';
 const channelId = window.channelId || '265345534';
