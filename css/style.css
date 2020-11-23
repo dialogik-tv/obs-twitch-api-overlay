@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 body {
     background-color: #000;
-}
-
-span {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Racing Sans One', 'Arial', sans-serif;
     font-size: 1.6em;
 }
 
-.holder {
-    color: #808080;
-    margin-right: 2em;
+#label {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: auto;
+    max-width: 420px;
+    background-color: rgba(200, 200, 200, .2);
+    padding: 20px;
+    color: #c3c3c3;
+    margin-left: -420px;
+    transition: margin-left 300ms ease-in-out;
 }
 
-.holder:last-child {
-    margin-right: 0;
-}
-
-.value {
+#label > #label-value {
     color: #fff;
+    margin-left: 6px;
+}
+
+#label.visible {
+    margin-left: 0;
 }
